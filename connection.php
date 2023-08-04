@@ -1,9 +1,9 @@
 <?php
 //variaveis de conexão
 $host = "localhost";
-$user = "root";
-$password = "";
-$dbName = "chat";
+$user = "u667371984_HECK";
+$password = "Heck3522@";
+$dbName = "u667371984_chat";
 
 //cria uma conexao
 $conn = new mysqli($host, $user, $password, $dbName);//codigo que executa a conexão
