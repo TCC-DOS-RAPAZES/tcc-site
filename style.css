@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212; 
+}
+
+.letreiro{
+    color: #33ccff;
+    font-size: 65px;
+    font-family: fantasy;
+    text-align: center;
+    margin-top: -250px;
+    text-shadow: 0 0 1px #33ccff, 0 0 1px #33ccff, 0 0 1px #33ccff, 0 0 1px #33ccff;
+}
+
+/*ESTILIZACAO MENU HEADER*/
+.menu-header {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px;
+    width: 98%; /* Ocupa toda a largura da página */
+    position: fixed; /* Fixa o menu no topo */
+    top: 0; /* Alinha o menu no topo da página */
+    left: 0; /* Alinha o menu à esquerda da página */
+    z-index: 999; /* Define a ordem de empilhamento, caso haja outros elementos fixos */
+    display: flex; /* Use flexbox para alinhamento vertical */
+    align-items: center; /* Centralize verticalmente as âncoras */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 35px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #33ccff;
+    font-size: 30px;
+    font-family: fantasy;
+    text-decoration: none;
+    padding: 5px 10px;
+    padding-top: -10px;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px;
+}
+/*------------------------------------------------------*/
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-text {
+    color: #33ccff;
+    font-size: 24px;
+    font-family: fantasy;
+}
+
+.chatbox {
+    background-color: #1a1a1a; 
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    overflow-y: auto;
+}
+
+.frame-chat{
+    width: 400px;
+    height: 500px;
+}
+
+#message-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e1e; 
+    color: #fff; 
+    border: 1px solid #444; 
+}
+
+#message-input:focus {
+    outline: none;
+}
+
+#message-input::placeholder {
+    color: #999;
+}
+
+#custom-combobox {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e1e; 
+    color: #fff; 
+    border: 1px solid #444; 
+    border-radius: 5px;
+    /* Efeito Neon */
+    box-shadow: 0 0 3px #33ccff, 0 0 3px #33ccff, 0 0 3px #33ccff, 0 0 3px #33ccff;
+    appearance: none;
+}
+
+#custom-combobox::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #33ccff; 
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #33ccff; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ccff, 0 0 5px #33ccff, 0 0 5px #33ccff, 0 0 5px #33ccff;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a8cff; 
+}
+
+.linkRegistro {
+    margin-top: 20px;
+}
+
+.linkRegistro a {
+    color: #bbb; 
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkRegistro a:hover {
+    color: #ff0000;
+}
+
+.login{
+    color: #fff;
+    border: 1px solid #1a8cff; 
+    border-radius: 5px;
+    padding: 35px;
+    box-shadow: 0 0 5px #33ccff, 0 0 5px #33ccff, 0 0 20px #33ccff, 0 0 5px #33ccff;
+}
+.botao{
+    text-align: center;
+}
+/*LISTA DE USUARIOS*/
+/* Estilos para a lista de usuários */
+.users {
+    margin-top: 20px;
+  }
+  
+  .list-users {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-users li {
+    margin-bottom: 10px;
+  }
+  
+  .list-users li a {
+    display: block;
+    padding: 8px;
+    border: 1px solid #1a8cff;
+    box-shadow: 0 0 5px #33ccff, 0 0 5px #33ccff, 0 0 20px #33ccff, 0 0 5px #33ccff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+    font-size: 25px;
+    color: #1a8cff;
+  }
+  
+  .list-users li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+/**-----------------/
